@@ -9,3 +9,5 @@ _ide_helper.php
 /.idea
 /assets/components
 /node_modules
+tests/_data/db.sqlite_snapshot
+tests/_output/*
