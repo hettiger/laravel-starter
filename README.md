@@ -6,9 +6,8 @@ A fresh Starting Point for Laravel Applications.
 #### Installation
 
 ```bash
-composer create --dev hettiger/laravel-starter new-project
+composer create --dev --stability="dev" hettiger/laravel-starter new-project
 cd new-project
-php artisan key:generate
 php artisan ide-helper:generate
 bower install
 npm install
