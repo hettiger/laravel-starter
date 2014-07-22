@@ -19,7 +19,11 @@ App::before(function($request)
 
 App::after(function($request, $response)
 {
-	//
+	if ( App::environment() === 'local' )
+	{
+		$performedQueries = count(DB::getQueryLog());
+		Log::info('Total performed DB Queries: ' . $performedQueries, ['URL' => URL::current()]);
+	}
 });
 
 /*
@@ -88,3 +92,8 @@ Route::filter('csrf', function()
 		throw new Illuminate\Session\TokenMismatchException;
 	}
 });
+
+/**
+ * Apply the csrf filter to all POST, PUT, PATCH and DELETE requests
+ */
+Route::when('*', 'csrf', array('post', 'put', 'patch', 'delete'));
