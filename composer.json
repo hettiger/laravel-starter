@@ -1,7 +1,7 @@
 {
-	"name": "laravel/laravel",
-	"description": "The Laravel Framework.",
-	"keywords": ["framework", "laravel"],
+	"name": "hettiger/laravel-starter",
+	"description": "A fresh Starting Point for Laravel Applications.",
+	"keywords": ["hettiger", "framework", "laravel", "starter", "starting", "point"],
 	"license": "MIT",
 	"require": {
 		"laravel/framework": "4.2.*",
