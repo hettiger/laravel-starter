@@ -7,3 +7,4 @@ composer.phar
 Thumbs.db
 _ide_helper.php
 /.idea
+/assets/components
