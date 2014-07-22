@@ -7,6 +7,7 @@ A fresh Starting Point for Laravel Applications.
 
 ```bash
 composer create hettiger/laravel-starter new-project
+cd new-project
 php artisan key:generate
 php artisan ide-helper:generate
 bower install
