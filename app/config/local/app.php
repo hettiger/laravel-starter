@@ -15,4 +15,21 @@ return array(
 
 	'debug' => true,
 
+	/*
+	|--------------------------------------------------------------------------
+	| Append Autoloaded Service Providers
+	|--------------------------------------------------------------------------
+	|
+	| For development tasks we need some more Service Providers being
+	| autoloaded. Those are listed below.
+	|
+	*/
+
+	'providers' => append_config(
+		array(
+			'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider',
+			'Way\Generators\GeneratorsServiceProvider',
+		)
+	),
+
 );

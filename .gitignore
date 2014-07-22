@@ -1,8 +1,13 @@
 /bootstrap/compiled.php
 /vendor
 composer.phar
-composer.lock
 .env.*.php
 .env.php
 .DS_Store
 Thumbs.db
+_ide_helper.php
+/.idea
+/assets/components
+/node_modules
+tests/_data/db.sqlite_snapshot
+tests/_output/*

@@ -13,5 +13,12 @@
 
 Route::get('/', function()
 {
-	return View::make('hello');
+	return View::make('pages.index');
+});
+
+Route::get('/flash', function()
+{
+	Flash::message('Test');
+
+	return Redirect::to('/');
 });

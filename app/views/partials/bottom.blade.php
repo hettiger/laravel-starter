@@ -1,0 +1,1 @@
+@yield('bottom.extension')
